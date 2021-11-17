@@ -24,6 +24,9 @@ namespace SQLiteSample
         private void SQLiteConn(string DBFilePath)
         {
             connecString = "Data Source=" + DBFilePath + ";Pooling=true;FailIfMissing=false";
+
+            Console.WriteLine($"컨넥션 스트링 : {connecString}");
+            
         }
 
         //트랜잭션 시작
